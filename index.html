@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body onload="createButtonArray()">
+
+    <div class="popup-bg" id="popup_window">
+        <div class="popup-textbox">
+            <p class="pop-text">The following are absent:</p><br>
+            <p class="pop-text" id="at_list"></p>
+            <button id="confirm" class="popup-button" onclick="confirm()">Confirm</button>
+            <button id="cancel" class="popup-button cancel" onclick="cancel()">Cancel</button>
+        </div>
+    </div>
+    <div id="button_array">
+    </div>
+    <input type="text" id="output_text" readonly>
+    <input type="submit" onclick="sbmt()">
+
+
+
+</body>
+
+</html>
